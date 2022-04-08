@@ -1,8 +1,11 @@
 /**
- * CPCS324 PROJECT PART 1
- * 7 APR 2022
+ * CPCS324  DAR
+ * PROJECT PART 1
+ * 8 APR 2022
+ * BADOR RAKKAN ALGHALIB            1905253
+ * MARYAM ABDULRAHMAN BAMBEROOK     1906316  
  */
-import java.util.Scanner;
+import java.util.Scanner; 
 public class Application {
     public static void main(String[] args) {
 
@@ -11,18 +14,17 @@ public class Application {
         System.out.println("\t1- Kruskal's Algorithm & Prim's Algorithm (based on Priority Queue)\n"
                 + "\t2- Prim's Algorithm (based on Min Heap) & Prim's Algorithm (based on Priority Queue)");
         System.out.println("----------------------------------------------------------------\n");
-        System.out.println(">>Test  cases : \n(where n is the number of vertices "
-                + "and m is the number of edges)");
+        System.out.println(">>Test  cases : ");
         System.out.print("Enter number of Vertices: ");
         int verNo = scan.nextInt();
         System.out.print("Enter number of Edges: ");
         int edgeNo = scan.nextInt();
 
-        // CREATE GRAPH 
-        new Graph().makeGraph(verNo, edgeNo);
-
         System.out.print("\n>>Enter your choice: ");
         int choice = scan.nextInt();
+
+        // CREATE GRAPH 
+        new Graph().makeGraph(verNo, edgeNo);
 
         switch (choice) {
             // 1- Kruskal's Algorithm & Prim's Algorithm (based on Priority Queue)
@@ -39,6 +41,7 @@ public class Application {
 
             // 2- Prim's Algorithm (based on Min Heap) & Prim's Algorithm (based on Priority Queue)
             case 2:
+            
                 System.out.println("\nPrim's Algorithm (based on Min Heap): ");
                 new MHPrimAlg().MHprim();
                 new MHPrimAlg().displayResultingMST();

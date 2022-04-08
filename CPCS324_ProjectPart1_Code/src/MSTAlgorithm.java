@@ -14,7 +14,6 @@ public class MSTAlgorithm {
         int minimumCost = 0;
         for (int i = 0; i < MSTResultList.size(); i++) {
             minimumCost += MSTResultList.get(i).weight;
-            //System.out.println( (i+1) + " = " + MSTResultList.get(i).toString());
         }// END FOR LOOP
         System.out.println("\tMinimum Cost Spanning Tree = " + minimumCost);
         System.out.println("\tTotal runtime = " + totalTime + " msec");

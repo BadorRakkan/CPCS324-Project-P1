@@ -31,8 +31,6 @@ public class PQPrimAlg extends MSTAlgorithm {
 
         // INSERT AN ENTRY REPRESENTING A MAPPING INTO PQ AND MAKE ITS KEY AS 0
         key[0] = 0;
-        // Map.Entry<Integer, Integer> temp = new AbstractMap.SimpleEntry<Integer,
-        // Integer>(key[0],0);
         priorityQueue.add(new AbstractMap.SimpleEntry<Integer, Integer>(key[0], 0));
 
         // LOOP WHILE QUEUE IS NOT EMPTY 
